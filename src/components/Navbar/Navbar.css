@@ -43,3 +43,41 @@ width: 90px;
     width: 20px;
     cursor: pointer;
 }
+.navbar-right .profile{
+    border-radius: 4px;
+    width: 35px;
+}
+.navbar-profile{
+    display: flex;
+    align-items: center;
+    gap: 10;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar .dropdown{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: max-content;
+    background: #191919;
+    padding: 18px 22px;
+    border-radius: 2px;
+    text-decoration: underline;
+    z-index: 1;
+    display: none;
+}
+
+.navbar .dropdown p{
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.navbar-profile:hover .dropdown{
+display: block;
+}
+
+.nav-dark{
+    background: #141414;
+}
+
