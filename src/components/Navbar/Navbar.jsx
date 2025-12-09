@@ -6,6 +6,7 @@ import bell from '../../assets/bell_icon.svg'
 import profile from '../../assets/profile_img.png'
 import caret from '../../assets/caret_icon.svg'
 import { logout } from '../../firebase'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     const navRef=useRef();
@@ -39,7 +40,9 @@ const Navbar = () => {
         New & Popular
     </li>
     <li>
+        <Link to="/watchlist">
         My List
+        </Link>
     </li>
     <li>
         Browse by Languages
