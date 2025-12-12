@@ -18,7 +18,7 @@ const TitleCards = ({ title, category }) => {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer YOUR_TMDB_BEARER_KEY'
+      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMmRiZWFiNWViOTZmMTA2NmI2NDI1ZTEzNDE2M2I0OCIsIm5iZiI6MTc2NTAyMzAzNi40MjQsInN1YiI6IjY5MzQxZDNjYmYyOTNjZWZjNDQ4ZTdhNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.eGU6SJzaitS_vqPciqWYN10-HZMunJifPdmpbgCJotk'
     }
   };
 
@@ -82,9 +82,12 @@ const TitleCards = ({ title, category }) => {
                 }
                 alt={c.original_title || c.name}
               />
-              <p>{c.original_title || c.name}</p>
             </Link>
+            <div className="card-info">
+                <p>{c.original_title || c.name}</p>
             <button className="add-to-list-btn" onClick={() => addToList(c)}>Add to List</button>
+            </div>
+              
           </div>
         ))}
       </div>

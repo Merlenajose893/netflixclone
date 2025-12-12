@@ -51,7 +51,7 @@ const Navbar = () => {
     </div>
     <div className="navbar-right">
         <img src={search} alt=''  className='icons'></img>
-        <p>Children</p>
+        <p></p>
         <img src={bell} alt=''  className='icons'></img>
         <div className="navbar-profile">
             <img src={profile} alt="" />

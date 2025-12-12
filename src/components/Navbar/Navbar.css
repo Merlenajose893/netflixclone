@@ -21,6 +21,24 @@ gap: 50px;
 {
 width: 90px;
 }
+nav ul li a {
+  color: #fff;           /* White text like Netflix */
+  text-decoration: none; /* Remove underline */
+  font-size: 16px;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #e50914;        /* Netflix red on hover */
+  transition: 0.3s;
+}
+
+nav ul li a:visited {
+  color: #fff;           /* Prevent violet visited color */
+}
+nav ul li a{
+    color: wheat;
+}
 
 .navbar-left ul{
     display: flex;
